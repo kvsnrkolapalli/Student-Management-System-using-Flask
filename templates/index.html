@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+
+    <br/>
+    <br/>
+    <div class="container">
+    <div class="alert alert-primary" role="alert">
+        <h4 class="alert-heading">Hello, This is Student Management System</h4>
+        <p>Aww yeah, you successfully entered into our page. </p>
+        <hr>
+        <p class="mb-0">The Following Operations will be performed in this portal.</p>
+      </div>
+    </div>  
+      <br><br>
+ 
+
+    <table class="table table-borderless">
+        <tr>
+            <td><center>
+                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                    <a href="/add" style="color:white;">
+                    <div class="card-header">Add Student</div></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Adds the Details of the Student</h5>
+                    </div>
+                </div>
+            </center>
+            </td>
+            <td>
+                <center>
+                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                    <a href="/view" style="color:white;">
+                    <div class="card-header">View Students</div></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Shows all the Details of the Student</h5>
+                    </div>
+                </div>
+            </center>
+            </td>
+        </tr><tr><td><br></td></tr>
+        <tr>
+            <td><center>
+                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Update Student</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Updates the Details of the Student</h5>
+                    </div>
+                </div>
+            </center>
+            </td>
+            <td>
+                <center>
+                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Delete Student</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Deletes the Details of the Student</h5>
+                    </div>
+                </div>
+            </center>
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+{% endblock body %}

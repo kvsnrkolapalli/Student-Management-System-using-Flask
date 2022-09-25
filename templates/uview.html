@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+    <div class="container my-3">
+      <br>
+      <div class="alert alert-primary alert-success" role="alert">
+        Details are successfully Updated..!
+      </div>
+          {% if view_all|length == 0 %}
+          <div class="alert alert-primary" role="alert">
+            No Records in the database
+          </div>
+
+            {% else %}
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Roll No</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Contact No</th>
+                  <th scope="col">Date of Birth</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in view_all %}
+                <tr>
+                  <th scope="row">{{i.rno}}</th>
+                  <td>{{i.name}}</td>
+                  <td>{{i.email}}</td>
+                  <td>{{i.gender}}</td>
+                  <td>{{i.contact}}</td>
+                  <td>{{i.dob}}</td>
+                  <td>{{i.address}}</td>
+                  <td>
+                    <a href="/update/{{i.rno}}"><button type="button" class="btn btn-outline-primary btn-sm ">Update</button></a>
+                    <a href="/delete/{{i.rno}}"><button type="button" class="btn btn-outline-primary btn-sm ">Delete</button></a>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            
+           {% endif %}
+          
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+{% endblock body %}

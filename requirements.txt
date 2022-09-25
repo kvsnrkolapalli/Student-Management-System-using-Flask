@@ -1,0 +1,4 @@
+flask
+flask_sqlalchemy
+datetime
+#use this command !pip install -r -requirements.txt
