@@ -6,11 +6,11 @@ Step-1:
 Open Navigate to the Folder "Student-Management-System-using-Flask"
 
 Step-2:
-Open Terminal and Type the Command
+Open Terminal and Type the Command Below
 # pip install -r requirements.txt
 
 Step-3:
-In the Terminal Type 
+In the Terminal Type the Command Below
 # python app.py
 
 Step-4:
