@@ -1,4 +1,5 @@
 flask
 flask_sqlalchemy
 datetime
+gunicorn
 #use this command !pip install -r -requirements.txt
